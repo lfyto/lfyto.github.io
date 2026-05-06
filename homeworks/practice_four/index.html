@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>如何培养认真严谨的习惯</title>
+
+<link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Microsoft YaHei", sans-serif;
+        background-color: #fff;
+        padding: 40px;
+        color: #333;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin-left: -60px;/*这个应该是将整体像左移动60px，不然文字显示不全*/
+        margin-right: auto;
+    }
+
+    .mybox {
+        display: flex;
+        gap: 60px;
+        align-items: stretch;
+    }
+
+    .img-box {
+        flex: 0 0 440px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 80px;/*这个应该是将我设置的图片容器距离容器顶部80px，目的是为了尽量使图片文字同一水平*/
+    }
+
+    .img-box img {
+        width: 120%;
+        height: 120%;/*为了让图片更大点*/
+        object-fit: contain;
+        display: block;
+    }
+
+    .text-box {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+    }
+
+    .title {
+        text-align: center;
+        font-family: 'ZCOOL KuaiLe', cursive;
+        font-size: 38px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    .title span {
+        color: #2E5C8A;
+        font-family: 'ZCOOL KuaiLe', cursive;
+    }
+
+    .time {
+        text-align: center;
+        font-size: 15px;
+        margin-bottom: 35px;
+    }
+
+    .time .gray {
+        color: #999;
+    }
+
+    .time .blue {
+        color: #2E5C8A;
+        margin: 0 8px;
+    }
+
+    .list {
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .list li {
+        position: relative;
+        padding-left: 28px;
+        margin-bottom: 22px;
+        font-size: 16px;
+        line-height: 1.8;
+        white-space: nowrap;
+    }
+
+    .list li::before {
+        content: "♠";/*用图片还要调整大小，这里直接用特殊符号吧*/
+        position: absolute;
+        left: 0;
+        top: 2px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .red {
+        color: #E60012;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="mybox">
+
+        <div class="img-box">
+            <img src="image.jpg" alt="态度决定一切 细节决定成败">
+        </div>
+
+        <div class="text-box">
+            <h1 class="title">如何培养<span>认真严谨</span>的习惯</h1>
+
+            <div class="time">
+                <span class="gray">时间：</span><span class="blue">2022年02月21日17时26分</span>
+                &nbsp;&nbsp;&nbsp;
+                <span class="gray">来源：</span><span class="blue">思政教育</span>
+            </div>
+
+            <ul class="list">
+                <li><span class="red">反复确认</span>，做任何事情都要照顾到每一个细节并反复确认，<span class="red">要有一种始在脑子里“虚拟”整个事件过程的第力</span>，确保所有的节点都正常。</li>
+                <li>想尽办法<span class="red">努力让不可能变为可能</span>只有佣会全力做了，才算是努力。</li>
+                <li>结果导向<span class="red">一切以结果为导向，任何事情都是你的名片。</span>还要思考你的结果和过程是否满足所有和你配合的人的需求。</li>
+                <li>学会假设<span class="red">了解周围比你强的人，观察他们的做事方法。</span>遇到让自己束手无策的时候，把自己虚拟成他的样子，想想他会怎么做。</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
